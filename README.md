@@ -34,6 +34,10 @@ Navigate to the `evaluated` directory with `cd evaluated` and execute the `pytho
 
 Return to the root directory with `cd ..` and execute `python evaluate_by_judge.py` to evaluate your model using a language model as a judge.
 
+### 6. Generate weighted Files & Plots
+
+Open the `GRAG-LLM-EASY-BENCHMARK.ipynb` and execute all cells.
+
 ## Setting Up OpenAI API Key
 
 To evaluate a model from OpenAI, you must set a valid OpenAI API key. This can be done in one of the following ways:
