@@ -44,9 +44,8 @@ To evaluate a model from OpenAI, you must set a valid OpenAI API key. This can b
 
 ## Code References
 
-
-- The `evaluate_model.py` script is responsible for generating model responses and processing CSV files. Key functions include:
-  - `generate_model_responses`: Handles communication with the OpenAI API.
+The `evaluate_model.py` script is responsible for generating model responses and processing CSV files. Key functions include:
+- `generate_model_responses`: Handles communication with the OpenAI API.
 
 ``` 
 def generate_model_responses(system, instruction):
