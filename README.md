@@ -16,23 +16,23 @@ Ensure the following dependencies are installed before running the scripts:
 
 ### 1. Download Evaluation Dataset
 
-First, download the evaluation dataset from Hugging Face using the `download_test_sets_save_as_csv` function. The dataset can be found at the following link: [GRAG-LLM-EASY-BENCHMARK](https://huggingface.co/datasets/avemio/GRAG-LLM-EASY-BENCHMARK).
+First, download the evaluation dataset from Hugging Face using the `python download_test_sets_save_as_csv.py`. The dataset can be found at the following link: [GRAG-LLM-EASY-BENCHMARK](https://huggingface.co/datasets/avemio/GRAG-LLM-EASY-BENCHMARK).
 
 ### 2. Prepare Datasets
 
-Prepare the datasets and extract special patterns necessary for evaluation using the `prepare_datasets` function.
+Prepare the datasets and extract special patterns necessary for evaluation using the `python prepare_datasets.py`
 
 ### 3. Evaluate the Model
 
-To evaluate a model compatible with an OpenAI endpoint, use the `evaluate_model` script. Ensure you have set a valid OpenAI API key. This can be done via an environment variable, an environment file, or directly in the code (not recommended for security reasons).
+To evaluate a model compatible with an OpenAI endpoint, use `python evaluate_model.py`. Ensure you have set a valid OpenAI API key. This can be done via an environment variable, an environment file, or directly in the code (not recommended for security reasons).
 
 ### 4. Extract Special Metrics
 
-Navigate to the `evaluated` directory and execute the `extract_special_metrics` script to process the evaluation results.
+Navigate to the `evaluated` directory with `cd evaluated` and execute the `python extract_special_metrics.py` script to process the evaluation results.
 
 ### 5. Evaluate by Judge
 
-Return to the root directory and execute the `evaluate_by_judge` script to evaluate your model using a language model as a judge.
+Return to the root directory with `cd ..` and execute `python evaluate_by_judge.py` to evaluate your model using a language model as a judge.
 
 ## Setting Up OpenAI API Key
 
